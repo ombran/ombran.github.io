@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[コードの海で溺れたい]]></title>
+  <link href="http://ombran.github.io/atom.xml" rel="self"/>
+  <link href="http://ombran.github.io/"/>
+  <updated>2013-10-21T00:14:24+09:00</updated>
+  <id>http://ombran.github.io/</id>
+  <author>
+    <name><![CDATA[ombran]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[投稿テスト]]></title>
+    <link href="http://ombran.github.io/blog/2013/10/21/post-test/"/>
+    <updated>2013-10-21T00:12:00+09:00</updated>
+    <id>http://ombran.github.io/blog/2013/10/21/post-test</id>
+    <content type="html"><![CDATA[<p>投稿テストですよ。</p>
+]]></content>
+  </entry>
+  
+</feed>
