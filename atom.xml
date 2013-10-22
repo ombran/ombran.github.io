@@ -4,7 +4,7 @@
   <title><![CDATA[コードの海で溺れたい]]></title>
   <link href="http://ombran.github.io/atom.xml" rel="self"/>
   <link href="http://ombran.github.io/"/>
-  <updated>2013-10-21T00:14:24+09:00</updated>
+  <updated>2013-10-22T22:10:16+09:00</updated>
   <id>http://ombran.github.io/</id>
   <author>
     <name><![CDATA[ombran]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OctopressとGitHub Pagesのブログ]]></title>
+    <link href="http://ombran.github.io/blog/2013/10/22/create-new-blog/"/>
+    <updated>2013-10-22T21:11:00+09:00</updated>
+    <id>http://ombran.github.io/blog/2013/10/22/create-new-blog</id>
+    <content type="html"><![CDATA[<p>GitHubでブログってのがプログラマっぽくていいなと思ったのと、なんか面白そうだったので作ってみました。<br/>
+参考にしたのは以下のサイトです。</p>
+
+<ul>
+<li><a href="http://morizyun.github.io/blog/octopress-gitpage-minimum-install-guide/">OctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！</a></li>
+<li><a href="http://myy.github.io/blog/2013/04/19/hello-world/">GitHubとOctopressとBitbucketでブログをつくってみた</a></li>
+<li><a href="http://tokkonopapa.github.io/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a></li>
+</ul>
+
+
+<p>リポジトリをGitHubだけで運用するよりもBitbucketと一緒に運用した方が都合がいいっぽいので、ソース自体はBitbucketに置いてます。Privateにもできるしね。<br/>
+あと、なんか自分の環境ではRakeが新しいらしく<code>rake install</code>とかのrakeを使うコマンドがそのままだとうまくいかなかったので、<code>bundle exec rake install</code>ってすることで対応しました。</p>
+
+<p>技術系のネタはここに書いていこうかなと思ってます。ちゃんと続けばいいな。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[投稿テスト]]></title>
