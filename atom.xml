@@ -4,7 +4,7 @@
   <title><![CDATA[コードの海で溺れたい]]></title>
   <link href="http://ombran.github.io/atom.xml" rel="self"/>
   <link href="http://ombran.github.io/"/>
-  <updated>2013-10-23T22:52:34+09:00</updated>
+  <updated>2013-11-12T21:44:48+09:00</updated>
   <id>http://ombran.github.io/</id>
   <author>
     <name><![CDATA[ombran]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[PHPUnitを軽く触ってみた]]></title>
+    <link href="http://ombran.github.io/blog/2013/11/12/phpunit-helloworld/"/>
+    <updated>2013-11-12T21:25:00+09:00</updated>
+    <id>http://ombran.github.io/blog/2013/11/12/phpunit-helloworld</id>
+    <content type="html"><![CDATA[<p>最近はPHPをメインで使うことが多いので、テストできる環境作らないとなと思って、<a href="http://gihyo.jp/dev/feature/01/php-test/0001" title="PHPUnit3で始めるユニットテスト">この辺</a>を参考にしてphpunitをインストールしてみました。</p>
+
+<p>インストール自体そのものはうまくいったんですけど、サンプルを実行してみてもPHPUnit/Framework.phpが見つからないっていうエラーが出てうまくいかない。</p>
+
+<p>ちょっと調べて見たところ、PHPUnitの3.7以降で構造が変わって、PHPUnit/Framework.phpとなっているところをPHPUnit/Autoload.phpに変更する必要があるとのこと。</p>
+
+<p>というわけで、</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">require_once</span> <span class="s1">&#39;PHPUnit/Framework.php&#39;</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>を</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="c1">//require_once &#39;PHPUnit/Framework.php&#39;;</span>
+</span><span class='line'><span class="k">require_once</span> <span class="s1">&#39;PHPUnit/Autoload.php&#39;</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>に変更したら問題なく動作した。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[OctopressとGitHub Pagesのブログ]]></title>
