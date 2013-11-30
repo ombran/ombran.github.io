@@ -1,24 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[コードの海で溺れたい]]></title>
-  <link href="http://ombran.github.io/atom.xml" rel="self"/>
-  <link href="http://ombran.github.io/"/>
-  <updated>2013-11-30T18:25:34+09:00</updated>
-  <id>http://ombran.github.io/</id>
-  <author>
-    <name><![CDATA[ombran]]></name>
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Polymer.jsに触れてみた - コードの海で溺れたい</title>
+	<meta name="author" content="ombran">
+
+	
+	<meta name="description" content="Web Components仕様を動作させることができるPolymer.jsを少しだけ触ってみました。
+インストールからサンプル実行までの流れです。 Polymer.jsのインストール Polymer.jsプロジェクトのページを参考にPolymer.jsを取得します。 &hellip;">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="コードの海で溺れたい" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script async="true" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">コードの海で溺れたい</a></h1>
+<nav id="main-nav"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul class="main">
+	<li><a href="/">Blog</a></li>
+	<li><a href="/blog/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="http://google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:ombran.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+<nav id="sub-nav" class="alignright">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/ombran" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/ombran" title="GitHub">GitHub</a>
+		
     
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+    
+	</div>
+	<form class="search" action="http://google.com/search" method="get">
+		<input class="alignright" type="text" name="q" results="0">
+		<input type="hidden" name="q" value="site:ombran.github.io">
+	</form>
+</nav>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Polymer.jsに触れてみた]]></title>
-    <link href="http://ombran.github.io/blog/2013/11/30/hello-polymer/"/>
-    <updated>2013-11-30T16:56:00+09:00</updated>
-    <id>http://ombran.github.io/blog/2013/11/30/hello-polymer</id>
-    <content type="html"><![CDATA[<p>Web Components仕様を動作させることができるPolymer.jsを少しだけ触ってみました。<br/>
+</header>
+	
+		
+	
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Polymer.jsに触れてみた</h2>
+	<div class="entry-content"><p>Web Components仕様を動作させることができるPolymer.jsを少しだけ触ってみました。<br/>
 インストールからサンプル実行までの流れです。</p>
 
 <h2>Polymer.jsのインストール</h2>
@@ -156,69 +218,73 @@ bower_components/
 Polymer.jsを通じてWeb Componentsの便利さが体感できるはずです。</p>
 
 <p>これが普及すれば、Web開発が大きく変わりそうな予感がします。</p>
-]]></content>
-  </entry>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
   
-  <entry>
-    <title type="html"><![CDATA[PHPUnitを軽く触ってみた]]></title>
-    <link href="http://ombran.github.io/blog/2013/11/12/phpunit-helloworld/"/>
-    <updated>2013-11-12T21:25:00+09:00</updated>
-    <id>http://ombran.github.io/blog/2013/11/12/phpunit-helloworld</id>
-    <content type="html"><![CDATA[<p>最近はPHPをメインで使うことが多いので、テストできる環境作らないとなと思って、<a href="http://gihyo.jp/dev/feature/01/php-test/0001" title="PHPUnit3で始めるユニットテスト">この辺</a>を参考にしてphpunitをインストールしてみました。</p>
-
-<p>インストール自体そのものはうまくいったんですけど、サンプルを実行してみてもPHPUnit/Framework.phpが見つからないっていうエラーが出てうまくいかない。</p>
-
-<p>ちょっと調べて見たところ、PHPUnitの3.7以降で構造が変わって、PHPUnit/Framework.phpとなっているところをPHPUnit/Autoload.phpに変更する必要があるとのこと。</p>
-
-<p>というわけで、</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">require_once</span> <span class="s1">&#39;PHPUnit/Framework.php&#39;</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure>
 
 
-<p>を</p>
+<time datetime="2013-11-30T16:56:00+09:00" pubdate data-updated="true">Nov 30<span>th</span>, 2013</time></div>
+	<div class="tags">
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="c1">//require_once &#39;PHPUnit/Framework.php&#39;;</span>
-</span><span class='line'><span class="k">require_once</span> <span class="s1">&#39;PHPUnit/Autoload.php&#39;</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure>
+</div>
+	
+</div>
+</article>
 
-
-<p>に変更したら問題なく動作した。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OctopressとGitHub Pagesのブログ]]></title>
-    <link href="http://ombran.github.io/blog/2013/10/22/create-new-blog/"/>
-    <updated>2013-10-22T21:11:00+09:00</updated>
-    <id>http://ombran.github.io/blog/2013/10/22/create-new-blog</id>
-    <content type="html"><![CDATA[<p>GitHubでブログってのがプログラマっぽくていいなと思ったのと、なんか面白そうだったので作ってみました。<br/>
-参考にしたのは以下のサイトです。</p>
-
-<ul>
-<li><a href="http://morizyun.github.io/blog/octopress-gitpage-minimum-install-guide/">OctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！</a></li>
-<li><a href="http://myy.github.io/blog/2013/04/19/hello-world/">GitHubとOctopressとBitbucketでブログをつくってみた</a></li>
-<li><a href="http://tokkonopapa.github.io/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで</a></li>
-</ul>
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+		
+		
+		<a class="addthis_button_tweet"></a>
+		
+		
+		
+	</div>
+	
+</div>
 
 
-<p>リポジトリをGitHubだけで運用するよりもBitbucketと一緒に運用した方が都合がいいっぽいので、ソース自体はBitbucketに置いてます。Privateにもできるしね。<br/>
-あと、なんか自分の環境ではRakeが新しいらしく<code>rake install</code>とかのrakeを使うコマンドがそのままだとうまくいかなかったので、<code>bundle exec rake install</code>ってすることで対応しました。</p>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2013
 
-<p>技術系のネタはここに書いていこうかなと思ってます。ちゃんと続けばいいな。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[投稿テスト]]></title>
-    <link href="http://ombran.github.io/blog/2013/10/21/post-test/"/>
-    <updated>2013-10-21T00:12:00+09:00</updated>
-    <id>http://ombran.github.io/blog/2013/10/21/post-test</id>
-    <content type="html"><![CDATA[<p>投稿テストですよ。</p>
-]]></content>
-  </entry>
-  
-</feed>
+    ombran
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-2066484-5']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+</body>
+</html>
